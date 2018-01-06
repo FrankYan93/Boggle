@@ -10,10 +10,11 @@ app.use(session({
   secret: 'knkjhvkhckchglhuucrxdtl',
   resave: true,
   saveUninitialized: true,
-  cookie: {secure: true},
+  cookie: {secure: false},
   rolling: true
 }));
 app.get('/', function(req,res){
+  console.log(req.session);
   if (req.session.highscore){
   }else{
     req.session.highscore = 0;
@@ -22,6 +23,7 @@ app.get('/', function(req,res){
 });
 
 app.post('/', function(req,res){
+  console.log(req.query.highscore);
   req.session.highscore = req.query.highscore;
   req.session.save()
 });
