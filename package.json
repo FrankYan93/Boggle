@@ -1,0 +1,14 @@
+{
+  "name": "boggle",
+  "version": "0.0.0",
+  "description": "Boggle",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "4.16.2",
+    "harp": "0.25.0",
+    "session-file-store": "^1.2.0"
+  }
+}
