@@ -18,7 +18,7 @@ A web server will start on port 3333. You can change the port by passing a `PORT
 
     PORT=8080 npm start
 
-I think it can perfectly work now.
-After it started, go to localhost at port 3333 to play.
-Downloaded a "dictionary.txt" and used a python script to transform it into a js set for validation.
+I think it can perfectly work now.  
+After it started, go to localhost at port 3333 to play.  
+Downloaded a "dictionary.txt" and used a python script("makedic.py") to transform it into a js set for validation.  
 Used session to keep Highest Score.
